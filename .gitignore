@@ -65,3 +65,4 @@ coverage
 
 # Dependency directories
 node_modules/
+.fake

@@ -2,7 +2,7 @@ using System;
 
 int MultiplyByFour(int number)
 {
-    throw new NotImplementedException();
+    return number << 2;
 }
 
 // Obtener argumentos de línea de comandos

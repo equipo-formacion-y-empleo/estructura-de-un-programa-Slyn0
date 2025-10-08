@@ -4,7 +4,10 @@ void SwapWithoutTemp(int a, int b)
 {
     Console.WriteLine($"Antes: a={a}, b={b}");
     // TODO: Implementar el intercambio usando XOR
-    throw new NotImplementedException();
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
+    Console.WriteLine($"Después: a={a}, b={b}");
     // Console.WriteLine($"Después: a={a}, b={b}");
 }
 

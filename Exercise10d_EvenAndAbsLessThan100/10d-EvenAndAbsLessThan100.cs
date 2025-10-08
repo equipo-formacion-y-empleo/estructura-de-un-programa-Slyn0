@@ -2,7 +2,7 @@ using System;
 
 bool EvenAndAbsLessThan100(double number)
 {
-    throw new NotImplementedException();
+    return (number % 2 == 0) && (Math.Abs(number) < 100);
 }
 
 // Obtener argumentos de línea de comandos

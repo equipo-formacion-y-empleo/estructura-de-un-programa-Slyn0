@@ -1,6 +1,6 @@
 bool IsInRange(int number, int minimum, int maximum)
 {
-    throw new NotImplementedException();
+    return number >= minimum && number <= maximum;
 }
 
 int number = int.Parse(args.Length > 0 ? args[0] : "15");
