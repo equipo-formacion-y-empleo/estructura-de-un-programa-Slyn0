@@ -1,6 +1,6 @@
 bool IsWorkingAge(int age)
 {
-    throw new NotImplementedException();
+    return age >= 16 && age <= 65;
 }
 
 int age = int.Parse(args.Length > 0 ? args[0] : "30");

@@ -1,7 +1,11 @@
+const string GREETINGS = "Hello";
+
 string ShowMessage(string name)
 {
-    throw new NotImplementedException();
+    return $"{GREETINGS}, {name}!";
 }
 
-Console.WriteLine(ShowMessage(args.Length > 0 ? args[0] : "Nombre1"));
-Console.WriteLine(ShowMessage(args.Length > 1 ? args[1] : "Nombre2"));
+Console.WriteLine("Hello World!");
+
+Console.WriteLine(ShowMessage(args.Length > 0 ? args[0] : "Ana"));
+Console.WriteLine(ShowMessage(args.Length > 1 ? args[1] : "Luis"));

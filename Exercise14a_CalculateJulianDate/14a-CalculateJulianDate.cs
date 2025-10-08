@@ -2,7 +2,14 @@ using System;
 
 void CalculateJulianDate(int day, int month, int year)
 {
-    throw new NotImplementedException();
+    int A = (14 - month) / 12;
+    int Y = year + 4800 - A;
+    int M = month + 12 * A - 3;
+
+    int julianDate = day + (153 * M + 2) / 5 + 365 * Y + Y / 4 - Y / 100 + Y / 400 - 32045;
+
+    Console.WriteLine($"Fecha gregoriana: {day}/{month}/{year}");
+    Console.WriteLine($"Fecha juliana: {julianDate:F0}");
     // TODO: Implementar cálculo y mostrar resultados:
     // Console.WriteLine($"Fecha gregoriana: {day}/{month}/{year}");
     // Console.WriteLine($"Fecha juliana: {julianDate:F0}");

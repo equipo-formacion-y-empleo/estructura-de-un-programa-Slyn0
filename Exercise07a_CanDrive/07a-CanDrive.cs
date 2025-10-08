@@ -1,11 +1,11 @@
 bool CanDrive(int age, bool hasLicense)
 {
-    throw new NotImplementedException();
+    return IsAdult(age) && hasLicense;
 }
 
 bool IsAdult(int age)
 {
-    throw new NotImplementedException();
+    return age >= 18;
 }
 
 int age = int.Parse(args.Length > 0 ? args[0] : "20");

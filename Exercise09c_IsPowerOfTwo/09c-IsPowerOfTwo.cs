@@ -2,7 +2,7 @@ using System;
 
 bool IsPowerOfTwo(int number)
 {
-    throw new NotImplementedException();
+    return (number > 0) && ((number & (number - 1)) == 0);
 }
 
 // Obtener argumentos de línea de comandos

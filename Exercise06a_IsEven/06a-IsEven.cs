@@ -1,6 +1,6 @@
 bool IsEven(int number)
 {
-    throw new NotImplementedException();
+    return number % 2 == 0;
 }
 
 int number = int.Parse(args.Length > 0 ? args[0] : "4");

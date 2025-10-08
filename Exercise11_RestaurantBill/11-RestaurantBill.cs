@@ -2,7 +2,22 @@ using System;
 
 double CalculateRestaurantBill(double subtotal, double taxPercentage, double tipPercentage, int numberOfDiners)
 {
-    throw new NotImplementedException();
+    double tax = subtotal * (taxPercentage / 100);
+
+    double tip = subtotal * (tipPercentage / 100);
+
+    double total = subtotal + tax + tip;
+
+    double totalPerPerson = total / numberOfDiners;
+
+    Console.WriteLine($"Subtotal: €{subtotal:F2}");
+    Console.WriteLine($"Impuesto ({taxPercentage}%): €{tax:F2}");
+    Console.WriteLine($"Propina ({tipPercentage}%): €{tip:F2}");
+    Console.WriteLine($"Total: €{total:F2}");
+    Console.WriteLine($"Comensales: {numberOfDiners}");
+    Console.WriteLine($"Total por persona: €{totalPerPerson:F2}");
+
+    return totalPerPerson;
 }
 
 // Obtener argumentos de línea de comandos
